@@ -1,3 +1,84 @@
-h1 {
-    font-size: 60px;
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header,
+.hero_section,
+.information_section,
+.quote_sectioon,
+.call_to_action_section,
+.footer {
+    padding: 1em 12.5%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    justify-content: space-around;
+    gap: 2em;
+}
+
+#header_logo {
+    margin-right: auto;
+}
+
+.header,
+.hero_section,
+.footer {
+    background-color : #1f2937;
+}
+
+#call_to_action,
+button {
+    background-color: #3882f6;
+}
+
+.quote_section {
+    background-color: #e5e7eb;
+}
+
+#header_logo,
+#hero_main_text {
+    color : #f9faf8;
+    font-weight: 800;
+}
+
+#hero_main_text {
+    font-size: 48px;
+}
+
+#header_logo {
+    font-size: 24px;
+}
+
+#hero_secondary_text,
+.header_link {
+    color : #e5e7eb;
+    font-size: 18px;
+}
+
+.quote_text,
+#information_header_text {
+    color : #1f2937;
+    font-size: 36px;
+}
+
+#information_header_text {
+    font-weight: 800;
+}
+
+.quote_text {
+    font-weight: 300;
+    font-style: italic;
 }
