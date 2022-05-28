@@ -1,11 +1,11 @@
 body {
-    /* display: flex; */
-    /* flex-direction: column; */
+    padding: 0;
+    margin: 0;
 }
 
 * {
     font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: red solid;
+    /* border: red solid; */
 }
 
 a {
@@ -16,13 +16,17 @@ a {
 .header,
 .hero_section,
 .information_section,
-.quote_sectioon,
+.quote_section,
 .call_to_action_section,
 .footer {
     /* flex-basis: 0; */
-    padding: 1em 12.5%; 
     display: flex;
     justify-content: center;
+}
+
+.header,
+.footer {
+    padding: 1em 12.5%;
 }
 
 .header,
@@ -49,10 +53,15 @@ a {
 }
 
 .hero_section,
-.information_section {
+.information_section,
+.call_to_action_section {
     padding: 5em 12.5%;
     gap: 4em;
     /* flex-wrap: wrap; */
+}
+
+.quote_section {
+    padding: 5em 20%;
 }
 
 .left_side {
@@ -65,7 +74,7 @@ a {
 
 .right_side {
     flex: 1;
-    height: 221px;
+    height: 240px;
 }
 
 .right_side img {
@@ -89,7 +98,6 @@ a {
     width: 200px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 .image_part {
@@ -108,25 +116,39 @@ a {
     object-fit: cover;
 }
 
-#call_to_action,
+.quote_section {
+    background-color: #e5e7eb;
+    flex-direction: column;
+}
+
+.call_to_action {
+    flex: 1;
+    border-radius: 6px;
+    padding: 2em 12.5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.call_to_action,
 button {
     background-color: #3882f6;
+    color: #ffffff;
+}
+
+.call_to_action_button {
+    border-color: white;
 }
 
 button {
     font-size: 18px;
     padding: 10px 2em;
+    border-style: solid;
     border-radius: 6px;
     font-weight: 500;
 }
 
 .left_side button {
     border : none;
-    color : white;
-}
-
-.quote_section {
-    background-color: #e5e7eb;
 }
 
 #header_logo,
@@ -150,8 +172,15 @@ button {
     color: #404040;
 }
 
+.call_to_action_title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
 #hero_secondary_text,
-.header_link {
+.header_link,
+.call_to_action_text,
+.footer {
     color : #e5e7eb;
     font-size: 18px;
 }
@@ -165,4 +194,10 @@ button {
 .quote_text {
     font-weight: 300;
     font-style: italic;
+}
+
+.quoteAuthorPart {
+    align-self: flex-end;
+    font-size: 26px;
+    font-weight: 700;
 }
