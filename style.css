@@ -19,7 +19,6 @@ a {
 .quote_section,
 .call_to_action_section,
 .footer {
-    /* flex-basis: 0; */
     display: flex;
     justify-content: center;
 }
@@ -57,9 +56,9 @@ a {
 .call_to_action_section {
     padding: 5em 12.5%;
     gap: 4em;
-    /* flex-wrap: wrap; */
 }
 
+.information_section,
 .quote_section {
     padding: 5em 20%;
 }
@@ -84,6 +83,7 @@ a {
 }
 
 .information_section {
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
